@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Task-1.css" />
+    <script src="./Task- 1.js" defer></script>
+    <title>Starbucks Coffee Company</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__brand">
+          <a href="index.html">
+            <img src="./img/logo2.0.png" alt="Starbucks" class="navbar__logo" />
+          </a>
+        </div>
+
+        <ul class="navbar__nav-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gift</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <ul class="navbar__nav-right">
+          <li>
+            <a href="#">
+              <img src="./img/marker.svg" alt="" class="navbar__marker" />
+            </a>
+            <span>Find a store</span>
+          </li>
+          <li><button class="btn btn-dark--outline">Sign In</button></li>
+          <li><button class="btn btn-dark">JOIN NOW</button></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger__top"></span>
+          <span class="hamburger__middle"></span>
+          <span class="hamburger__bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <ul>
+        <li><a href="#" class="text-sm">Home</a></li>
+          <li><a href="#" class="text-sm">Gift</a></li>
+          <li><a href="#" class="text-sm">Order</a></li>
+          <li><a href="#" class="text-sm">About</a></li>
+      </ul>
+
+      <div class="mobile-menu__bottom">
+        <button class="btn btn-dark--outline">Sign In</button>
+        <button class="btn btn-dark">Join Now</button>
+      </div>
+      <a href="#" class="find-store">
+        <img src="./img/marker.svg" alt="" class="navbar__marker" />
+        <span>Find a store</span>
+      </a>
+    </div>
+    <div id="filter"></div>
+
+    <!-- Box A -->
+    <section class="box box-a bg-primary text-center py-md">
+      <div class="box-inner">
+        <h1 class="text-xl">It's not just Coffee<br/>It's <span id="output">Starbucks</span></h1>
+        <p class="text-md">
+          MAKE EVERY SIP MORE REWARDING <br/>
+          Join Starbucks Rewards™ for delicious deals & exclusive offers.
+          <a href="#">Learn more</a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Box B -->
+    <section class="box box-b bg-secondary grid-col-2">
+      <img src="./img/61291-cheesecake-frappuccino-milkshake-starbucks-cream-free-frame_600x600.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Divine Strawberry Cheesecake Frappuccino! 🍓☕</h2>
+        <p class="text-md">
+          Say hello to the luscious Strawberry Cheesecake Frappuccino! Satisfy your cravings with this heavenly, cheesecake-inspired delight in a cup! 🍓🍰☕ #IndulgeNow"
+        </p>
+        <a href="#" class="btn btn-light--outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box C -->
+    <section class="box box-c bg-secondary grid-col-2 grid-reverse">
+      <img src="./img/box-c.png" alt="Sugar Plum Cheese Danish" />
+      <div class="box-text">
+        <h2 class="text-xl">Sugar Plum Cheese Danish</h2>
+        <p class="text-md">
+          Indulge in a delectable Sugar Plum Cheese Danish, featuring a perfectly spiced sugar-plum spread. Treat yourself to this festive delight! 🎄🍒🧀 #TreatYourself
+        </p>
+        <a href="#" class="btn btn-light--outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box D -->
+    <section class="box box-d bg-primary grid-col-2">
+      <img src="./img/STARBUCKS THANKSGIVING BLEND.jpg" alt="" />
+      <div class="box-text">
+        <h2 class="text-l">Starbucks Thanksgiving Blend</h2>
+        <p class="text-md">
+          Embrace the grand return of our elegant dark roast! Savor the diverse flavors from major coffee-growing regions worldwide. An exquisite blend that delights with every sip. ☕✨ #DarkRoastDelights"
+        </p>
+        <a href="#" class="btn btn-light--outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box E -->
+    <section class="box box-e bg-secondary grid-col-2 grid-reverse">
+      <img src="./img/HungerRelief.jpeg" alt="" />
+      <div class="box-text">
+        <h2 class="text-md">Holiday hunger relief</h2>
+        <p class="text-sm">
+          Join us in the fight against hunger this holiday season! Together, we can make a difference and bring joy to those in need. Your support can provide meals and hope to families facing hunger. Let's spread love and compassion, one meal at a time. #FightingHunger #HolidayGiving 🍲❤️
+        </p>
+        <a href="#" class="btn btn-light--outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box F -->
+    <section class="box box-f grid-col-2">
+      <div>
+        <img src="./img/uber-eats.jpg" alt="uber-eats" />
+        <div class="bg-extra py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Uber and Starbucks® want to help make the holidays better together</h2>
+            <p class="text-sm">
+              Uber and Starbucks want you to share a moment.<br/>
+               Order Starbucks® holiday favorites on Uber Eats.*<br/> 
+            </p>
+            <a href="#" class="btn btn-dark--outline">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./img/A!!!.jpg" alt="" />
+        <div class="bg-primary py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Loved Passing on Netflix?</h2>
+            <p class="text-sm">
+              "Starbucks and Netflix unite to bring book-to-film adaptations to life in an exciting new social content series! Delve into the world of cinema as actors and directors reveal the magic behind transforming beloved books into captivating movies. Grab your latte and join the cinematic journey! ☕🎬 #BookToFilm"
+            </p>
+            <a href="#" class="btn btn-light--outline">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="social">
+          <a href="http://www.spotify.com/starbuckspartners">
+            <img src="./img/social-spotify.svg" alt="social-spotify" />
+          </a>
+          <a href="https://www.facebook.com/Starbucks/">
+            <img src="./img/social-facebook.svg" alt="social-facebook" />
+          </a>
+          <a href="https://www.pinterest.com/starbucks">
+            <img src="./img/social-pinterest.svg" alt="pinterest" />
+          </a>
+          <a href="https://www.instagram.com/starbucks">
+            <img src="./img/instagram.png" alt="instagram" />
+          </a>
+          <a href="https://www.youtube.com/starbucks">
+            <img src="./img/social-youtube.svg" alt="youtube" />
+          </a>
+          <a href="https://twitter.com/Starbucks">
+            <img src="./img/twitter.png" alt="twitter" />
+          </a>
+        </div>
+        <img src="./img/logo.svg" alt="Starbucks" class="navbar__logo"/>
+        <p>© 2023 Starbucks Coffee Company. All rights reserved.<br/>
+         Designed by Somesh Sharma<br/>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
